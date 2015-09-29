@@ -1,5 +1,7 @@
 class Token < ActiveRecord::Base
 
+  before_create :generate_token
+
   # Relaciones con otros modelos
   belongs_to :user
 
