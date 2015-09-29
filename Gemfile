@@ -5,10 +5,11 @@ gem 'rails', '4.2.3'
 
 gem 'rails-api'
 
+gem 'mysql2' , '0.3.19'
+
 gem 'spring', :group => :development
 
-
-gem 'mysql2'
+gem 'bcrypt'
 
 
 
