@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
   # Relaciones con otros modelos
   has_many :tokens
-
+  has_many :networks
   # Modulo de BCrypt para crear contraseñas seguras
   include BCrypt
 

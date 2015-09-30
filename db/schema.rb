@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929231452) do
+ActiveRecord::Schema.define(version: 20150930165217) do
+
+  create_table "networks", force: :cascade do |t|
+    t.string   "essid",         limit: 255
+    t.string   "bssid",         limit: 255
+    t.string   "band",          limit: 255
+    t.string   "channel",       limit: 255
+    t.string   "security_type", limit: 255
+    t.string   "is_wps",        limit: 255
+    t.string   "longitude",     limit: 255
+    t.string   "latitude",      limit: 255
+    t.string   "first_seen",    limit: 255
+    t.string   "last_seen",     limit: 255
+    t.integer  "user_id",       limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "networks", ["user_id"], name: "index_networks_on_user_id", using: :btree
 
   create_table "tokens", force: :cascade do |t|
     t.string   "token",      limit: 255

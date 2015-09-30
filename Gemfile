@@ -11,6 +11,7 @@ gem 'spring', :group => :development
 
 gem 'bcrypt'
 
+gem 'jbuilder', '~> 2.0'
 
 
 # To use ActiveModel has_secure_password

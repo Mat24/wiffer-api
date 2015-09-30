@@ -1,0 +1,1 @@
+json.(@network, :id, :essid, :bssid, :band, :channel, :security_type, :is_wps, :longitude, :latitude, :first_seen, :last_seen, :user_id)

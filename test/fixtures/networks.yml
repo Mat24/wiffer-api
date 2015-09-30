@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  essid: MyString
+  bssid: MyString
+  band: MyString
+  channel: MyString
+  security_type: MyString
+  is_wps: MyString
+  longitude: MyString
+  latitude: MyString
+  first_seen: MyString
+  last_seen: MyString
+
+two:
+  essid: MyString
+  bssid: MyString
+  band: MyString
+  channel: MyString
+  security_type: MyString
+  is_wps: MyString
+  longitude: MyString
+  latitude: MyString
+  first_seen: MyString
+  last_seen: MyString
