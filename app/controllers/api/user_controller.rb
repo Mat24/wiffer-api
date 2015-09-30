@@ -1,4 +1,7 @@
 class Api::UserController < ApplicationController
+  # Puedo crear usuarios sin necesidad de estar autenticado
+  skip_before_action :autenticar, only: :create
+
   def update
     render json: {paramettrs: params},status: :ok
   end
@@ -17,7 +20,7 @@ class Api::UserController < ApplicationController
     @user = User.find_by_username(user_params[:username])
     puts @user
     if @user and @user.password == params[:password]
-      render text: "AUTORIZADO: #{@user.new_session_token}"
+      render text: "AUTORIZADO"
     else
       render text: "ERROR LOGIN INVALIDO"
     end
