@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
   before_action :autenticar
+  private
   def autenticar
     @token = params[:token]
     if @token
